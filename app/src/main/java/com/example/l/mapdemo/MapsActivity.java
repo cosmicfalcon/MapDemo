@@ -101,7 +101,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void showMapData(Location location) {
         LatLng mylocation = new LatLng(location.getLatitude(), location.getLongitude());
-        mMap.addMarker(new MarkerOptions().position(mylocation).title("My location"));
+        mMap.addMarker(new MarkerOptions().position(mylocation).title("My "));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 11.20f));
         //updateMapMarkers(0);
         Circle circle = mMap.addCircle(new CircleOptions()
